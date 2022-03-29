@@ -1,0 +1,231 @@
+    @font-face
+    /* Police  */
+    
+    {
+        font-family: "Roboto Regular";
+        src: url("/font/Roboto-Regular.ttf") format("truetype");
+    }
+    
+    body
+    /* Police des 5 pages  " La Page Index  " */
+    
+    {
+        font-family: "Roboto Regular", sans-serif;
+        font-size: 1.5rem;
+        /* background: #003D73; */
+    }
+    
+    .A-Propos-De-Moi-Paragraphe {
+        font-style: italic;
+        color: #1d5768;
+        margin: 5%;
+        width: 90%;
+    }
+    
+    .Partie-Principale {
+        display: flex;
+    }
+    
+    .Element-En-Gras {
+        font-weight: bold;
+    }
+    
+    .Elements-En-Italique {
+        font-style: italic;
+    }
+    
+    .Elements-Gras-Soulignes {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .Div-Photo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Photo {
+        display: block;
+        width: 360px;
+        height: auto;
+    }
+    
+    .Formation-Parcours {
+        width: 60%;
+    }
+    
+    .Formation-Parcours h1 {
+        color: #003D73;
+        margin: 0rem;
+        margin: 3rem 0rem 2rem 1.5rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    .Formation-Parcours h2 {
+        width: 90%;
+        color: #003D73;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-weight: bold;
+        margin: 3rem 0rem 2rem 1.5rem;
+    }
+    
+    .Formation-Parcours ul {
+        padding: 0px;
+    }
+    
+    .Donnees-Personnelles {
+        width: 40%;
+        background: #003D73;
+    }
+    
+    .Donnees-Personnelles h1 {
+        background: #012442;
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 48px 0px 0px 0px;
+    }
+    
+    .Sous-Titres-Informations-Personnelles {
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+    }
+    
+    .Portfolio {
+        text-align: center;
+        font-style: italic;
+        margin: 40px 0px 40px 0px;
+    }
+    
+    .Portfolio a {
+        text-decoration: none;
+        color: black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 10px;
+        box-shadow: 0px 0px 20px 10px white;
+        font-size: 1.5rem;
+    }
+    
+    .Portfolio a:hover {
+        color: white;
+        box-shadow: inset 0px 0px 20px 5px black;
+    }
+    
+    .Donnees-Personnelles h2 {
+        color: white;
+        background: #012442;
+        padding: 0rem 0rem 0rem 1rem;
+    }
+    
+    .Donnees-Personnelles li {
+        color: white;
+        margin: 2rem;
+    }
+    
+    li {
+        margin: 0rem 0rem 0.5rem 1.5rem;
+        list-style: none;
+    }
+    
+    .Languages-SEO {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .GitHub {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .Image-SEO {
+        width: 50px;
+    }
+    
+    .Image-GitHub {
+        width: 50px;
+    }
+    
+    .Texte-GitHub {
+        text-align: center;
+    }
+    
+    .Languages-Html-CSS-JavaScriptModel {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .Languages-Html-CSS-JavaScript {
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+    }
+    
+    .Langue-Français {
+        width: 96%;
+        margin: 0px auto;
+    }
+    
+    @media screen and (min-width: 769px) and (max-width: 1289px) {
+        .Formation-Parcours {
+            font-size: 1rem;
+            width: 100%;
+        }
+        .Donnees-Personnelles {
+            width: 100%;
+            font-size: 1rem;
+        }
+        .Donnees-Personnelles h1 {
+            background: #012442;
+            color: white;
+            text-align: center;
+            font-size: 1.7rem;
+            margin: 47px 0px 0px 0px;
+        }
+    }
+    
+    @media screen and (min-width: 265px) and (max-width: 768px) {
+        /* styles pour mobile petit écran paysage+Portrait*/
+        .Partie-Principale {
+            display: flex;
+            flex-direction: column;
+        }
+        .Formation-Parcours {
+            font-size: 0.8rem;
+            width: 100%;
+        }
+        .Donnees-Personnelles {
+            width: 100%;
+            font-size: 0.8rem;
+        }
+        .Photo {
+            display: block;
+            width: 180px;
+            height: auto;
+        }
+    }
+    
+    @media screen and (max-width: 264px) {
+        /* styles pour mobile très petit écran paysage+Portrait*/
+        .Partie-Principale {
+            display: flex;
+            flex-direction: column;
+        }
+        .Formation-Parcours {
+            font-size: 0.8rem;
+            width: 100%;
+        }
+        .Donnees-Personnelles {
+            width: 100%;
+            font-size: 0.8rem;
+        }
+        .Photo {
+            display: block;
+            width: 180px;
+            height: auto;
+        }
+    }
